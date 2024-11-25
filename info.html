@@ -2,17 +2,30 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      
-        <!-- 中等屏幕樣式 -->
-        <link rel="stylesheet" href="web_m.css" media="(min-width: 600px)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INFO</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                
+                const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+                
+                const link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.type = "text/css";
+                
+                if (isMobile) {
+                    link.href = "web_m.css";
+                } else {
+                    link.href = "web_pc.css"; 
+                }
     
-        <!-- 小屏幕樣式 -->
-        <link rel="stylesheet" href="web_s.css" media="(max-width: 599px)">
-        
-    <title>info</title>
+                document.head.appendChild(link);
+            });
+        </script>
     </head>
 
     <body>
+        <div class="button"> <a href="index.html"> < </a> </div>
         <div id="head">
                 <img src="logo.png" id="logo_img">
             <div id="title_info">
@@ -28,7 +41,9 @@
             夾帶著原住民傳統藝術的視覺震撼，<br>
             以及各類近代音樂和排灣音樂間的現代與東方傳統文化之結合，<br>
             提供都市年輕人一個更細膩認識台灣原住民藝術人文之當代渠道。<br>
+            
         </div>
 
+        <div id="box_bottom"></div>
     </body>
 </html>

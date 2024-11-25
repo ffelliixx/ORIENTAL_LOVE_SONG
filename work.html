@@ -2,15 +2,26 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-         <!-- 大中等屏幕樣式 -->
-         <link rel="stylesheet" href="web_m.css" media="(min-width: 641px)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WORK</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                
+                const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+                
+                const link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.type = "text/css";
+                
+                if (isMobile) {
+                    link.href = "web_m.css";
+                } else {
+                    link.href = "web_pc.css"; 
+                }
     
-         <!-- 小屏幕樣式 -->
-         <link rel="stylesheet" href="web_s.css" media="(max-width: 640px)">
-
-    
-    <title>work</title>
+                document.head.appendChild(link);
+            });
+        </script>
     </head>
 
     <body>
@@ -25,7 +36,7 @@
 
 
     <div id="box">
-        <!--<div id="square"></div>-->
+        <div id="square"></div>
         <br>
         <div>
             <img id="poster" src="poster_1.png">

@@ -2,14 +2,26 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-       
-        <!-- 中等屏幕樣式 -->
-        <link rel="stylesheet" href="web_m.css" media="(min-width: 641px) ">
-    
-        <!-- 小屏幕樣式 -->
-        <link rel="stylesheet" href="web_s.css" media="(max-width: 640px)">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>oriental love song</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                
+                const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+                
+                const link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.type = "text/css";
+                
+                if (isMobile) {
+                    link.href = "web_m.css";
+                } else {
+                    link.href = "web_pc.css"; 
+                }
+    
+                document.head.appendChild(link);
+            });
+        </script>
     </head>
 
 
@@ -24,6 +36,7 @@
         <li><a href="work.html">WORK</a></li>
     </ul>
 </div>
+<div id="box_bottom"></div>
 </body>
 
 </html>
