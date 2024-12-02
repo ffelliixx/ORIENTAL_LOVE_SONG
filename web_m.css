@@ -380,21 +380,14 @@ br{
 /*S3*/
 #box_Scene3{
 	position: absolute;
-	background-image: linear-gradient(to top,#ffffff ,#ffffff , #ffffffcc , #ffffff00 );
-	height: 1900px;
+	background-image: url("S3_bg_1.png");
+	height: 4500px;
 	width: 100%;
-	top:3000px;
+	top:2700px;
 	left: 0px;
 }
 
-#box_Scene3_sup{
-	position: absolute;
-	background-color:#ffffff;
-	height: 2400px;
-	width: 100%;
-	top:4800px;
-	left: 0px;
-}
+
 
 #box_Scene3_1{
 	position: absolute;
@@ -416,8 +409,7 @@ br{
 	font-family: "Yuji Syuku", serif;
 	font-weight: 400;
 	font-style: normal;
-	color: #40404061;
-	text-shadow: 2px 2px 4px #ffffff72;
+	color: #265c4b83;
 }
 
 #box_S3{
