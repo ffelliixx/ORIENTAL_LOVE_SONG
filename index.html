@@ -1,43 +1,194 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>oriental love song</title>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                
-                const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-                
-                const link = document.createElement("link");
-                link.rel = "stylesheet";
-                link.type = "text/css";
-                
-                if (isMobile) {
-                    link.href = "web_m.css";
-                } else {
-                    link.href = "web_pc.css"; 
-                }
-    
-                document.head.appendChild(link);
-            });
-        </script>
-    </head>
+        <style>
+        /* web.css*/
+            @charset "utf-8";
+@import url('https://fonts.cdnfonts.com/css/nasalization');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+body{
+    background-color:#ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure box model is consistent */
+}
+
+.bg_1{
+    background-color: #000000;
+    position: relative;
+    height: 100vh;
+    width: auto;
+}
+
+
+#chicken_bg_1_box{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#bg_1_box_1{
+    position: relative;
+    background-image: linear-gradient(to right,#ffffff00,#0000005b);
+    height: 100vh;
+    width: auto;
+}
+
+
+.chicken_bg_1_img{
+    background-image: url(chicken_bg_1.png);
+}
+
+.oriental_love_song_bg_1_box{
+    position: absolute;
+    background-color: #00000000;
+    height: 15vh;
+    width: 50vh;
+    right: 3vh;
+    top: 5vh;
+}
+
+#oriental_love_song_bg_1_img{
+    position:sticky;
+    height: auto;
+    width: 100%;
+    top: 0%;
+}
+
+.midnightclub_bg_1_box{  
+    position: absolute;
+    background-color: #00000000;
+    height: 10vh;
+    width: 50vh;
+    right: 3.5vh;
+    top: 18vh;
+}
+
+#midnightclub_bg_1_img{
+    position:sticky;
+    height: auto;
+    width: 100%;
+    top: 0%;
+}
+
+#logo_img{
+    position:sticky;
+    height: 55vh;
+    width: auto;
+    top: 0%;
+	user-select:none;
+	-webkit-user-select:none; 
+	-moz-user-select:none;
+	}
+
+
+.bg_1_logo_box{
+	position: absolute;
+    background-color: #00000000;
+    height: 70vh;
+    width: 10vh;
+    right: 10vh;
+    top: 25vh;
+}
+
+#taipei_taiwan_bg_1_img{
+    position:sticky;
+    height: 55vh;
+    width: auto;
+    top: 0%;
+	user-select:none;
+	-webkit-user-select:none; 
+	-moz-user-select:none;
+	}
+
+
+.taipei_taiwan_bg_1_box{
+	position: absolute;
+    background-color: #00000000;
+    height: 10vh;
+    width: 50vh;
+    left: 0vh;
+    top: 75vh;
+}
+
+#bg_2{
+    position: relative;
+    background-color: #000000;
+    height: 100vh;
+    width: auto;
+}
+
+     </style>
+</head>
+
+
 
 
 <body>
+    
+    <script>
+        //js
+        const stickyImage = document.getElementById('stickyImage');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY; 
+            const zoomFactor = 1 + scrollTop / 1000; 
+            stickyImage.style.transform = `scale(${Math.min(zoomFactor, 2)})`; 
+        });
 
-<div>
-    <img src="logo.png" id="logo_img">
-</div>
-<div id="text">
-    <ul>
-        <li><a href="info.html">INFO</a></li><br>
-        <li><a href="work.html">WORK</a></li>
-    </ul>
-</div>
-<div id="box_bottom"></div>
+    </script>
+
+    <!--html-->
+    <div class="bg_1">
+        <div id="chicken_bg_1_box" class="chicken_bg_1_img">
+        </div>
+        <div id="bg_1_box_1">
+
+        </div>
+        <div class="oriental_love_song_bg_1_box">
+            <img src= "oriental_love_song_bg_1.png" id="oriental_love_song_bg_1_img">
+        </div>
+
+        <div class="midnightclub_bg_1_box">
+            <img src="midnightclub_bg_1.png" id="midnightclub_bg_1_img">
+        </div>
+        <div class="bg_1_logo_box">
+            <img src="logo.png" id="logo_img">
+        </div>
+        
+        <div class="taipei_taiwan_bg_1_box">
+            <img src="taipei_taiwan_bg_1.png" id="taipei_taiwan_bg_1_img">
+        </div>
+   
+    
+        
+        
+    </div>
+
+    <div id="bg_2">
+
+    </div>
 </body>
+
+
+
+
+
+
+
+
+
+
 
 </html>
