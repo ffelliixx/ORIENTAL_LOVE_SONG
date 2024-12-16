@@ -170,8 +170,6 @@
       background-image: linear-gradient(to top, #00000000, #000000, #000000, #00000000);
     }
 
-
-
     #info {
       position: absolute;
       width: 100%;
@@ -317,7 +315,7 @@
       width: 100%;
       height: auto;
       font-size: 8vh;
-      top: -10vh;
+      top: -6vh;
       text-align: left;
       font-family: "Yuji Syuku", serif;
       line-height: 90%;
@@ -336,7 +334,10 @@
       position: relative;
       width: 70%;
       height: auto;
+      transition: transform 0.3s;
+      cursor: pointer;
     }
+
 
     #s2v_3a_box{
       position: relative;
@@ -350,6 +351,9 @@
       position: relative;
       width: 70%;
       height: auto;
+      height: auto;
+      transition: transform 0.3s;
+      cursor: pointer;
     }
 
     #s2_v{
@@ -385,10 +389,10 @@
       height: auto;
       top: 42vh;
       font-size: 1.5vh;
-      text-align: right;
+      text-align: left;
       font-family: "Noto Serif TC", serif;
       line-height: 3vh;
-      right: 2vh;
+      right: -13vh;
       color: #ffffff;
       text-shadow: 0 0 7px #000000;
     }
@@ -613,9 +617,9 @@
   </div>
 
   <div id="text_5a">
-  心得心得心得</br>
-  心得心得心得</br>
-  心得心得心得</br>
+  花草樹木</br>
+  形色</br>
+  場景基底</br>
   </div>
 
   <div id="text_6">
@@ -623,9 +627,9 @@
   </div>
 
   <div id="text_6a">
-  心得心得心得心</br>
-  心得心得心得心</br>
-  心得心得心得心</br>
+  雙孔雀帶入愛情</br>
+  利用光影去襯托</br>
+  畫面充斥著情感</br>
     </div>
   
 
@@ -634,9 +638,9 @@
   </div>
 
   <div id="text_7a">
-  心得心得心得</br>
-  心得心得心得</br>
-  心得心得心得</br>
+  孔雀主蝴蝶輔</br>
+  透過視覺結合</br>
+  訴說故事情節</br>
     </div>
 
   </div>
@@ -676,8 +680,6 @@
       const scale1 = Math.max(1 - scrollY / 1000, 0); // 隨滾動縮小
       const scale2 = Math.max(1 - scrollY / 400, 0);
       const logoscale = Math.min(1 + scrollY / 200, 2);
-
-      //隨滾動位置
 
       //隨滾動淡出
       const opacity = Math.max(1 - scrollY / (windowHeight / 1.5), 0); // 隨滾動淡出
@@ -733,6 +735,36 @@
 
 
     });
+       
+
+      //點擊圖片轉換
+      const s2_p1 = document.getElementById('s2v_1a');
+
+       // 定義圖片的 URL
+       const imageUrls = ["s2_p1.png", "s2_p1a.png"];
+        let currentImageIndex = 0;
+
+        // 設置點擊事件
+        s2_p1.addEventListener('click', () => {
+            // 切換到下一張圖片
+            currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+            s2_p1.src = imageUrls[currentImageIndex];
+        });
+
+        
+        const s2_p3 = document.getElementById('s2v_3a');
+
+       // 定義圖片的 URL
+       const imageUrls1 = ["s2_p3.png", "s2_p3a.png"];
+        let currentImageIndex1 = 0;
+
+        // 設置點擊事件
+        s2_p3.addEventListener('click', () => {
+            // 切換到下一張圖片
+            currentImageIndex1 = (currentImageIndex1 + 1) % imageUrls1.length;
+            s2_p3.src = imageUrls1[currentImageIndex1];
+        });
+
   </script>
 </body>
 

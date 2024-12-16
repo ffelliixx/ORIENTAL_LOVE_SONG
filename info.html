@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>點擊圖片轉換</title>
+    <style>
+        img {
+            cursor: pointer;
+            width: 300px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>點擊圖片切換</h1>
+    <img id="clickableImage" src="s2_p3.png" alt="Image 1">
+
+    <script>
+      //點擊圖片轉換
+      const s2_p3 = document.getElementById('s2v_3a');
+
+       // 定義圖片的 URL
+       const imageUrls = ["s2_p3.png", "s2_p3a.png"];
+        let currentImageIndex = 0;
+
+        // 設置點擊事件
+        s2_p3.addEventListener('click', () => {
+            // 切換到下一張圖片
+            currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+            s2_p3.src = imageUrls[currentImageIndex];
+        });
+    </script>
+</body>
+</html>
