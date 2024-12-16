@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>index</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap">
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      height: 5000px; /* 確保有足夠的滾動空間 */
+      height: 5000px;
+      /* 確保有足夠的滾動空間 */
       background-color: #000000;
       color: #FFFFFF;
       overflow-x: hidden;
     }
+
+
 
     .background {
       position: fixed;
@@ -20,7 +27,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('chicken_bg_1_test.png'); /* 替換成你的圖片 URL */
+      background-image: url('chicken_bg_1_test.png');
+      /* 替換成你的圖片 URL */
       background-size: cover;
       background-position: center;
       transition: opacity 0.5s ease;
@@ -33,12 +41,12 @@
       padding: 20px;
     }
 
-    
+
     .oriental_love_song_bg_1image {
       position: absolute;
       right: 2vh;
       top: 5vh;
-      transform:scale(1);
+      transform: scale(1);
       width: 40vh;
       height: auto;
       background-size: cover;
@@ -46,8 +54,8 @@
       opacity: 1;
       transition: transform 0.1s, opacity 0.1s;
     }
-    
-    #oriental_love_song_bg_1{
+
+    #oriental_love_song_bg_1 {
       width: 100%;
       height: auto;
     }
@@ -58,23 +66,23 @@
       top: 14vh;
       transform: scale(1);
       width: 35vh;
-      height: auto;      
+      height: auto;
       background-size: cover;
       background-position: center;
       opacity: 1;
       transition: transform 0.1s, opacity 0.1s;
     }
 
-    #midnightclub_bg_1{
-        width: 100%;
-        height: auto;
+    #midnightclub_bg_1 {
+      width: 100%;
+      height: auto;
     }
 
     .logowords_bg_1image {
       position: absolute;
       right: 5vh;
       top: 65vh;
-      transform:scale(1);
+      transform: scale(1);
       width: 20vh;
       height: auto;
       background-size: cover;
@@ -83,15 +91,15 @@
       transition: transform 0.1s, opacity 0.1s;
     }
 
-    #logowords_bg_1{
-        width: 100%;
-        height: auto;
+    #logowords_bg_1 {
+      width: 100%;
+      height: auto;
     }
 
     .taipei_taiwan_bg_1image {
       position: absolute;
       right: 3vh;
-      top: 80vh;
+      top: 83vh;
       transform: translate(0%, 0%) scale(1);
       width: 30vh;
       height: auto;
@@ -101,16 +109,16 @@
       transition: transform 0.1s, opacity 0.1s;
     }
 
-    #taipei_taiwan_bg_1{
-        width: 100%;
-        height: auto;
+    #taipei_taiwan_bg_1 {
+      width: 100%;
+      height: auto;
     }
 
 
-    .bg_1image {
+    .motion_blur1_bg_1image {
       position: absolute;
       transform: scale(1);
-      top: 10vh;
+      top: 20vh;
       width: 100%;
       background-size: cover;
       background-position: center;
@@ -118,16 +126,16 @@
       transition: transform 0.1s, opacity 0.1s;
     }
 
-    #bg_1{
-        width: 100%;
-        height: auto;
+    #motion_blur1_bg_1 {
+      width: 100%;
+      height: auto;
     }
 
     .logoimage {
       position: absolute;
       right: 5vh;
       top: 22vh;
-      transform:translate(0%, 0%) scale(1);
+      transform: translate(0%, 0%) scale(1);
       width: 10vh;
       height: auto;
       background-size: cover;
@@ -136,50 +144,517 @@
       transition: transform 0.1s, opacity 0.1s;
     }
 
-    #logo{
-        width: 100%;
-        height: auto;
+    #logo {
+      width: 100%;
+      height: auto;
+    }
+
+    #info_v {
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      height: 1000px;
+      top: 1400px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    #a {
+      position: absolute;
+      width: 100%;
+      height: 30%;
+      top: 1250px;
+      background-image: linear-gradient(to top, #00000000, #000000, #000000, #00000000);
+    }
+
+
+
+    #info {
+      position: absolute;
+      width: 100%;
+      height: 1000px;
+      top: 1400px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    #Video {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+
+
+    #text_1 {
+      position: relative;
+      width: 100%;
+      height: auto;
+      font-size: 8vh;
+      right: 2vh;
+      top: -80px;
+      text-align: right;
+      font-family: "Yuji Syuku", serif;
+      line-height: 90%;
+      color: #ffffff;
+      text-shadow: 0 0 10px #000000;
+    }
+
+    #text_1a {
+      position: relative;
+      width: 70%;
+      height: auto;
+      font-size: 1.5vh;
+      text-align: right;
+      font-family: "Noto Serif TC", serif;
+      line-height: 3vh;
+      top: -60px;
+      left: 4vh;
+      text-shadow: 0 0 7px #000000;
+    }
+
+    #text_2 {
+      position: relative;
+      width: 100%;
+      height: auto;
+      font-size: 8vh;
+      left: 2vh;
+      top: -30px;
+      text-align: left;
+      font-family: "Yuji Syuku", serif;
+      line-height: 90%;
+      color: #ffffff;
+      text-shadow: 0 0 10px #000000;
+    }
+
+    #text_2a {
+      position: relative;
+      width: 50%;
+      height: auto;
+      font-size: 1.5vh;
+      text-align: left;
+      font-family: "Noto Serif TC", serif;
+      line-height: 3vh;
+      top: -10px;
+      left: -8vh;
+      color: #ffffff;
+      text-shadow: 0 0 7px #000000;
+    }
+
+    
+    #text_3 {
+      position: relative;
+      width: 100%;
+      height: auto;
+      font-size: 8vh;
+      top: 10px;
+      right: 2vh;
+      text-align: right;
+      font-family: "Yuji Syuku", serif;
+      line-height: 90%;
+      color: #ffffff;
+      text-shadow: 0 0 10px #000000;
+    }
+
+    #text_3a {
+      position: relative;
+      width: 50%;
+      height: auto;
+      font-size: 1.5vh;
+      text-align: right;
+      font-family: "Noto Serif TC", serif;
+      line-height: 3vh;
+      top: 30px;
+      left: 8vh;
+      color: #ffffff;
+      text-shadow: 0 0 7px #000000;
+    }
+
+    #info_v1 {
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      height: 1000px;
+      top: 2400px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
     }
     
+    #a1 {
+      position: absolute;
+      width: 100%;
+      height: 20%;
+      top: 2300px;
+      background-image: linear-gradient(to bottom, #00000000, #000000, #000000, #00000000);
+    }
+
+
+    #info_1 {
+      position: absolute;
+      width: 100%;
+      height: 1000px;
+      top: 2400px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    #text_4 {
+      position: relative;
+      width: 100%;
+      height: auto;
+      font-size: 8vh;
+      top: -10vh;
+      text-align: left;
+      font-family: "Yuji Syuku", serif;
+      line-height: 90%;
+      color: #ffffff;
+      text-shadow: 0 0 10px #000000;
+    }
+
+    #s2v_1a_box{
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: -4vh;
+    }
+
+    #s2v_1a{
+      position: relative;
+      width: 70%;
+      height: auto;
+    }
+
+    #s2v_3a_box{
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 1vh;
+      right: -15vh;
+    }
+
+    #s2v_3a{
+      position: relative;
+      width: 70%;
+      height: auto;
+    }
+
+    #s2_v{
+      position: relative;
+      width: 70%;
+      height: auto;
+      top: 6vh;
+    }
+
+    #s2v_2a_box{
+      position: relative;
+      top:2vh;
+    }
+
+    #text_5{
+      position: absolute;
+      width: 20%;
+      height: auto;
+      font-size: 8vh;
+      top: 43vh;
+      left: 26vh;
+      text-align: left;
+      font-family: "Yuji Syuku", serif;
+      line-height: 90%;
+      color: #ffffff;
+      text-shadow: 0 0 10px
+       #000000;
+    }
+
+    #text_5a{
+      position: absolute;
+      width: 50%;
+      height: auto;
+      top: 42vh;
+      font-size: 1.5vh;
+      text-align: right;
+      font-family: "Noto Serif TC", serif;
+      line-height: 3vh;
+      right: 2vh;
+      color: #ffffff;
+      text-shadow: 0 0 7px #000000;
+    }
+
+    #text_6{
+      position: absolute;
+      width: 20%;
+      height: auto;
+      font-size: 8vh;
+      top: 67vh;
+      left: 13vh;
+      text-align: left;
+      font-family: "Yuji Syuku", serif;
+      line-height: 90%;
+      color: #ffffff;
+      text-shadow: 0 0 10px
+       #000000;
+    }
+
+    #text_6a{
+      position: absolute;
+      width: 50%;
+      height: auto;
+      font-size: 1.5vh;
+      top: 66vh;
+      text-align: right;
+      font-family: "Noto Serif TC", serif;
+      line-height: 3vh;
+      left: -11vh;
+      color: #ffffff;
+      text-shadow: 0 0 7px #000000;
+    }
+
+    #text_7{
+      position: absolute;
+      width: 20%;
+      height: auto;
+      font-size: 8vh;
+      top: 93vh;
+      left: 26vh;
+      text-align: left;
+      font-family: "Yuji Syuku", serif;
+      line-height: 90%;
+      color: #ffffff;
+      text-shadow: 0 0 10px
+       #000000;
+    }
+
+    #text_7a{
+      position: absolute;
+      width: 50%;
+      height: auto;
+      font-size: 1.5vh;
+      text-align: right;
+      font-family: "Noto Serif TC", serif;
+      line-height: 3vh;
+      top: 92vh;
+      right: 2vh;
+      color: #ffffff;
+      text-shadow: 0 0 7px #000000;
+    }
     
+    #a2{
+      position: absolute;
+      width: 100%;
+      height: 70%;
+      top: 3200px;
+      background-image: linear-gradient(to bottom, #00000000, #000000, #000000, #00000000);
+    }
 
 
+    #info_v2 {
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      height: 1000px;
+      top: 3600px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    #info_2 {
+      position: absolute;
+      width: 100%;
+      height: 1000px;
+      top: 3600px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    
   </style>
 </head>
+
 <body>
   <div class="background" id="background"></div>
 
   <div class="content">
-    <!--p style="margin-top: 600px;">
-    ------------------------------------------------------------</p-->
   </div>
-    <div class="oriental_love_song_bg_1image" id="oriental_love_song_bg_Image_js">  
-        <img src= "oriental_love_song_bg_1.png" id="oriental_love_song_bg_1">
+  <div class="oriental_love_song_bg_1image" id="oriental_love_song_bg_Image_js">
+    <img src="oriental_love_song_bg_1.png" id="oriental_love_song_bg_1">
+  </div>
+
+  <div class="midnightclub_bg_1image" id="midnightclub_bg_1image_js">
+    <img src="midnightclub_bg_1.png" id="midnightclub_bg_1">
+  </div>
+
+  <div class="logowords_bg_1image" id="logowords_bg_1_js">
+    <img src="logowords_bg_1.png" id="logowords_bg_1">
+  </div>
+
+
+  <div class="taipei_taiwan_bg_1image" id="taipei_taiwan_bg_1js">
+    <img src="taipei_taiwan_bg_1.png" id="taipei_taiwan_bg_1">
+  </div>
+
+
+  <div class="motion_blur1_bg_1image" id="motion_blur1_bg_1js">
+    <img src="motion_blur1_bg_1.png" id="motion_blur1_bg_1">
+  </div>
+
+  <div class="logoimage" id="logo_js">
+    <img src="logo.png" id="logo">
+  </div>
+  </div>
+
+  <div id="info_v">
+    <div>
+      <video autoplay muted loop css="Video">
+        <source src="s1v.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+    </div>
+  </div>
+  <div id="a"></div>
+
+  <div id="info">
+    <div id="text_1">
+      孔雀王子
     </div>
 
-    <div class="midnightclub_bg_1image" id="midnightclub_bg_1image_js">  
-        <img src= "midnightclub_bg_1.png" id="midnightclub_bg_1">
-    </div>
-    
-    <div class="logowords_bg_1image" id="logowords_bg_1_js">  
-        <img src= "logowords_bg_1.png" id="logowords_bg_1">
-    </div>
+
+    <div id="text_1a">
+      傳說天神化作孔雀王子到人間遊玩</br>
+      且愛上了族長的女兒</br>
+      然而他們倆的愛情得不到族長認可</br>
+      得知後孔雀王子雖傷心沒有得到祝福</br>
+      但仍不放棄&nbsp&nbsp於是振翅飛向天際</br>
+      此時羽翼間撒下了一顆顆美麗的琉璃珠當作聘禮</br>
+      照亮大地&nbsp&nbsp並同時消失在天空的另一端</br>
       
-    
-    <div class="taipei_taiwan_bg_1image" id="taipei_taiwan_bg_1js">  
-        <img src= "taipei_taiwan_bg_1.png" id="taipei_taiwan_bg_1">
     </div>
 
-    
-    <div class="bg_1image" id="js">  
-        <img src= "motion_blur1_bg_1.png" id="bg_1">
+    <div id="text_2">
+      視覺
     </div>
 
-    <div class="logoimage" id="logo_js">  
-        <img src= "logo.png" id="logo">
+    <div id="text_2a">
+      主視覺圍繞在傳說</br>
+      孔雀王子的愛情故事</br>
+      與排灣族獨特的傳統藝術之間</br>
+      結合自然場景以及現代光影特效</br>
+      進行製作的一段動畫</br>
+      作為音樂祭配搭的背景VJ</br>
+      以及宣傳影片之用</br>
     </div>
 
+    <div id="text_3">
+      音樂
+    </div>
+    <div id= "text_3a">
+    結合排灣族民謠的元素</br>
+    以及現代旋律去創作歌曲</br>
+    更符合現代人的口味</br>
+    令觀眾能對排灣族樂曲</br>
+    甚至文化產生興趣</br>
+  </div>
+  </div>
 
+
+
+  <div id="info_v1">
+    <div>
+      <video autoplay muted loop css="Video">
+        <source src="s2v_b.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  </div>
+
+  <div id="a1"></div>
+
+  <div id="info_1">
+    <div id="text_4">
+      製作過程
+    </div>
+   <div id="s2v_1a_box">
+    <img src="s2_p1.png" id="s2v_1a">
+   </div>
+   
+   <div id="s2v_3a_box">
+    <img src="s2_p3.png" id="s2v_3a">
+   </div>
+
+   <div id="s2v_2a_box">
+    <video autoplay muted loop id="s2_v">
+      <source src="s2_vt.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+   </div>
+
+  
+  <div id="text_5">
+    花
+  </div>
+
+  <div id="text_5a">
+  心得心得心得</br>
+  心得心得心得</br>
+  心得心得心得</br>
+  </div>
+
+  <div id="text_6">
+    雀
+  </div>
+
+  <div id="text_6a">
+  心得心得心得心</br>
+  心得心得心得心</br>
+  心得心得心得心</br>
+    </div>
+  
+
+  <div id="text_7">
+    蝶
+  </div>
+
+  <div id="text_7a">
+  心得心得心得</br>
+  心得心得心得</br>
+  心得心得心得</br>
+    </div>
+
+  </div>
+ 
+  <div id="info_v2">
+<div>
+  <video autoplay muted loop css="Video">
+    <source src="s3v.mp4" type="video/mp4">
+   Your browser does not support HTML5 video.
+  </video>
+</div>
+  </div>
+  <div id="a2"></div>
+  
+  <div id="info_2">
+
+
+  </div>
 
   <script>
     const background = document.getElementById('background');
@@ -189,25 +664,26 @@
     const image1 = document.getElementById('midnightclub_bg_1image_js');
     const image2 = document.getElementById('logowords_bg_1_js');
     const image3 = document.getElementById('taipei_taiwan_bg_1js');
-    const image4 = document.getElementById('js');
+    const image4 = document.getElementById('motion_blur1_bg_1js');
+
+
     window.addEventListener('scroll', () => {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
 
       //滾動放大縮小
-      const scale = 1 + scrollY / 1000; // 隨滾動放大
-      const scaleb1 = 1 + scrollY / 200;
-      const scale1 = 1 - scrollY / 1000; // 隨滾動縮小
-      const scale2 = 1 - scrollY / 400;
-      const logoscale = 1 + scrollY / 200;
+      const scale = Math.min(1 + scrollY / 1000, 1.1);  // 隨滾動放大
+      const scale1 = Math.max(1 - scrollY / 1000, 0); // 隨滾動縮小
+      const scale2 = Math.max(1 - scrollY / 400, 0);
+      const logoscale = Math.min(1 + scrollY / 200, 2);
 
       //隨滾動位置
-    
+
       //隨滾動淡出
       const opacity = Math.max(1 - scrollY / (windowHeight / 1.5), 0); // 隨滾動淡出
-      const opacity1 = Math.max(1 - scrollY / (windowHeight / 3), 0); 
-      const opacity_logo = Math.max(1 - scrollY / (windowHeight / 1.001), 0); 
-      
+      const opacity1 = Math.max(1 - scrollY / (windowHeight / 3), 0);
+      const opacity_logo = Math.max(1 - scrollY / (windowHeight / 1.001), 0);
+
       //oriental_love_song
       image.style.transform = `scale(${scale})`;
       image.style.opacity = opacity;
@@ -217,11 +693,11 @@
       image1.style.opacity = opacity;
 
       // logowords
-    if(scrollY >= 50){
-      image2.style.transform = `translate(120%, 0%)`;
-    }else if (scrollY < 50){
+      if (scrollY >= 50) {
         image2.style.transform = `translate(0%, 0%)`;
-    }
+      } else if (scrollY < 50) {
+        image2.style.transform = `translate(0%, 0%)`;
+      }
       image2.style.opacity = opacity1;
 
       //TAIPEI
@@ -229,33 +705,35 @@
       image3.style.opacity = opacity;
 
       //blur
-      image4.style.transform = `scale(${scaleb1})`;
       image4.style.opacity = opacity1;
 
       //logo
       image_logo.style.opacity = opacity_logo;
       image_logo.style.transform = `scale(${logoscale})`;
 
-        
+
 
       //poster_bg_1
-      if (scrollY >= 600 && scrollY <= 700) {
-                background.classList.add('scrolling');
-                background.style.opacity = 1 - (scrollY - 600) / 500; // 計算淡出效果
-            } else if (scrollY < 600) {
-                background.classList.remove('scrolling');
-                background.style.opacity = 1;
-            } else if (scrollY > 700) {
-                background.style.opacity = 0;
+      if (scrollY < 500) {
+        // 在滾動小於 500 時保持背景完全不透明
+        background.style.opacity = 1;
+      } else if (scrollY <= 550) {
+        // 在 500 到 1000 範圍內逐漸淡出
+        background.style.opacity = Math.max(1 - (scrollY - 500) / 500, 0);
+      } else {
+        // 超過 1000 時完全透明
+        background.style.opacity = 0;
       }
 
-    
 
-      
+
+
+
 
 
 
     });
   </script>
 </body>
+
 </html>
