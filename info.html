@@ -3,37 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>點擊圖片轉換</title>
+    <title>嵌入 SoundCloud 歌曲</title>
     <style>
-        img {
-            cursor: pointer;
-            width: 300px;
-            height: auto;
-            transition: transform 0.3s;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
-        img:hover {
-            transform: scale(1.1);
+        h1 {
+            margin: 20px;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            max-width: 500px;
+            height: 166px; /* 嵌入程式碼生成器的高度設置 */
         }
     </style>
 </head>
 <body>
-    <h1>點擊圖片切換</h1>
-    <img id="clickableImage" src="s2_p3.png" alt="Image 1">
-
-    <script>
-      //點擊圖片轉換
-      const s2_p3 = document.getElementById('s2v_3a');
-
-       // 定義圖片的 URL
-       const imageUrls = ["s2_p3.png", "s2_p3a.png"];
-        let currentImageIndex = 0;
-
-        // 設置點擊事件
-        s2_p3.addEventListener('click', () => {
-            // 切換到下一張圖片
-            currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
-            s2_p3.src = imageUrls[currentImageIndex];
-        });
-    </script>
+    <h1>嵌入 SoundCloud 單曲</h1>
+    <!-- 嵌入程式碼 -->
+    <iframe   
+    scrolling="no" 
+        frameborder="no" 
+        allow="autoplay" 
+        src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1986416499&color=%233c2c2c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true>
+       </iframe>
 </body>
 </html>
